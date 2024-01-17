@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+
+<body>
+    <div class="sliderbar">
+        <div class="log"></div>
+        <ul class="main">
+            <li class="active">
+                <a href="index.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Dashboard</span></a>
+            </li>
+            <li>
+                <a href="Newcomputer.html">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Registration</span></a>
+            </li>
+            <li>
+                <a href="Reports.html">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Reports</span>
+                </a>
+            </li>
+            <li>
+                <a href="Profile.html">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Profile</span></a>
+            </li>
+            <li>
+                <a href="setting.html">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span></a>
+            </li>
+            <li class="logout">
+                <a href="../login.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- body of my profile -->
+
+    <div class='cattles-manage-wrapper'>
+        <div class='edit-profile'>
+            <nav class='profile'>Profile</nav>
+            /
+            <nav class='edit-btn'> Edit</nav>
+        </div>
+        <div class="profile-preferences">
+            <div class='profile-h'>Profile</div>
+            <div class='profile-pref'>Preferences</div>
+        </div>
+        <div class="profile-container">
+            <nav class='profile-title'>
+                My Profile
+            </nav>
+            <div class="input-label">
+                <form action="" class='form-profile-container'>
+                    <nav id='cont'>
+                        <label htmlFor="" id='lab' class='names-ordered'>
+                            Fullname
+                            <nav class='ordered'>
+                                *
+                            </nav>
+                        </label>
+                        <input type="text" value={user.fullNames} />
+                    </nav>
+                    <nav id='cont'>
+                        <label htmlFor="" id='lab'>
+                            Email
+                        </label>
+                        <input type="email" id='lab' value={user.email} />
+                    </nav>
+                    <nav id='cont'>
+                        <label htmlFor="" id='lab'>
+                            Role
+                        </label>
+                        <input type="text" value={user.role} />
+                    </nav>
+                    <nav id='cont'>
+                        <label htmlFor="" id='lab' class='names-ordered'>
+                            Phone Number
+                            <nav class='ordered'>
+                                *
+                            </nav>
+                        </label>
+                        <input type="text" value={user.phoneNo} />
+                    </nav> 
+                    <nav id='cont'>
+                        <label htmlFor="" id='lab' class='names-ordered'>
+                            Location
+                            <nav class='ordered'>
+                                *
+                            </nav>
+                        </label>
+                        <input type="text" value={user.location} />
+                    </nav>
+                    <div class='change-pwd'>
+                        <p>Want to change Password?</p>
+                        <a href='changePassword.html'>Change!</a>
+                    </div>
+                </form>
+                <div class="all-form-btn">
+                    <div class="delete-form-btn">
+                        Delete Account
+                    </div>
+                    <div class="save-form-btn">
+                        save
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
