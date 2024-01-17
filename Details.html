@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>New Computer</title>
 </head>
 
@@ -21,11 +22,6 @@
                 <a href="Newcomputer.html">
                     <i class="fas fa-chart-bar"></i>
                     <span>Registration</span></a>
-            </li>
-            <li>
-                <a href="Users.html">
-                    <i class="fa-solid fa-user-check"></i>
-                    <span>User management</span></a>
             </li>
             <li>
                 <a href="Reports.html">
@@ -71,16 +67,16 @@
             <form action="">
                 <div class="regd">
                     <label for="">Registration Date <a class="important">*</a></label>
-                    <input type="date" placeholder="Enter your date...">
+                    <input type="date" value="{user.registrationDate}">
                 </div>
                 <div class="regd">
                     <label for="">Serial Number <a class="important">*</a></label>
-                    <input type="text" placeholder="Enter your Serial number...">
+                    <input type="text" value="{user.serialNumber}">
                 </div>
                 <div class="regd">
                     <label for="">School <a class="important">*</a></label>
                     <select name="" id="">
-                        <option value="">Select your School</option>
+                        <option value="{user.School}">{user.School}</option>
                         <option value="ICT">ICT</option>
                         <option value="ENGINEERING">ENGINEERING</option>
                         <option value="SCIENCE">SCIENCE</option>
@@ -90,7 +86,7 @@
                 <div class="regd">
                     <label for="">Department <a class="important">*</a></label>
                     <select name="" id="">
-                        <option value="">Select your department</option>
+                        <option value="{user.department}">{user.department}</option>
                         <option value="ICT">Computer Engineering</option>
                         <option value="ENGINEERING">Computer Science</option>
                         <option value="SCIENCE">Information System</option>
@@ -100,7 +96,7 @@
                 <div class="regd">
                     <label for="">Gate <a class="important">*</a></label>
                     <select name="" id="">
-                        <option value="">Select your gate</option>
+                        <option value="{user.gate}">{user.gate}</option>
                         <option value="Muhabura">Muhabura</option>
                         <option value="Ikaze">Ikaze</option>
                         <option value="Camp-kigali">Camp-kigali</option>
@@ -108,19 +104,19 @@
                 </div>
                 <div class="regd">
                     <label for="">Reg-Number <a class="important">*</a></label>
-                    <input type="text" placeholder="Enter your reg-number...">
+                    <input type="text" value="{user.registrationNumber}">
                 </div>
                 <div class="regd">
                     <label for="">Identification <a class="important">*</a></label>
-                    <input type="text" placeholder="Enter your Id number...">
+                    <input type="text" value="{user.identification}">
                 </div>
                 <div class="regd">
                     <label for="">Phone number <a class="important">*</a></label>
-                    <input type="text" placeholder="Enter your phone-number...">
+                    <input type="text" value="{user.phoneNumber}">
                 </div>
                 <div class="regd">
                     <label for="">Email <a class="important">*</a></label>
-                    <input type="text" placeholder="Enter your Email..">
+                    <input type="text" value="{user.email}">
                 </div>
             </form>
         </div>
